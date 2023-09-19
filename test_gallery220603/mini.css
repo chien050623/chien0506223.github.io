@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #4f77ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #4f77ff;
+}
+
+.inbox {
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  translate: -50% -50%;
+  background: #ffffff;
+  border-radius: 80px 80px 0 0;
+}
+
+.inbox:nth-child(1) {
+  top: -35px;
+  left: 70px;
+}
+
+.inbox:nth-child(2) {
+  top: 70px;
+  left: 105px;
+  rotate: 90deg;
+}
+
+.inbox:nth-child(3) {
+  top: 105px;
+  left: 0px;
+  rotate: 180deg;
+}
+.inbox:nth-child(4) {
+  top: 0px;
+  left: -35px;
+  rotate: -90deg;
+}
