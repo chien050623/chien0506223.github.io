@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>家樂福線上購物網 | 口腔保健 我最罩</title>
+    <meta name="description"
+        content="8/31-9/12，口腔保健 我最罩，指定商品滿額贈紅利點數/漱口體驗包，冷凍/冷藏/常溫一次到貨，單筆滿800元免運費，家樂福線上購物以最優惠價格滿足您的生活所需！">
+    <meta name="author" content="家樂福線上購物網">
+    <meta name="copyright" content="家樂福線上購物網">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="家樂福線上購物網 | 口腔保健 我最罩">
+    <meta property="og:url" content="https://events.carrefour.com.tw/oral-health202309/index.html">
+    <meta property="og:image" content="https://events.carrefour.com.tw/oral-health202309/images/800x380.jpg">
+    <meta property="og:description"
+        content="8/31-9/12，口腔保健 我最罩，指定商品滿額贈紅利點數/漱口體驗包，冷凍/冷藏/常溫一次到貨，單筆滿800元免運費，家樂福線上購物以最優惠價格滿足您的生活所需！">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .loading {
+            position: fixed;
+            width: 100dvw;
+            height: 100dvh;
+            background: darkcyan;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: all .3s;
+        }
+
+        .loading.act{
+            display: none;
+            opacity: 0;
+            transition-duration: all .3s;
+        }
+
+        .loader {
+            color: #fff;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            animation: mulShdSpin 1.3s infinite linear;
+            transform: translateZ(0);
+        }
+
+        @keyframes mulShdSpin {
+
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em,
+                    2em -2em 0 0em, 3em 0 0 -1em,
+                    2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 0;
+            }
+
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+                    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            25% {
+                box-shadow: 0 -3em 0 -0.5em,
+                    2em -2em 0 0, 3em 0 0 0.2em,
+                    2em 2em 0 0, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+                    -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+                    -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+                    -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+
+    <script>
+        // let zzzkkk = document.querySelector('.loading');
+        // console.log(zzz);
+        // if (document.readyState === 'complete') {
+        //     document.querySelector('.loading').style.display = "none";
+        // }
+
+        // window.setTimeout(function () {
+        //     document.querySelector('.loading').style.display = "none";
+        // }, 3000);
+
+        // let stateCheck = setInterval(() => {
+        //     if (document.readyState === 'complete') {
+        //         clearInterval(stateCheck);
+        //         document.querySelector('.loading').style.display = "none";
+        //     }
+        // }, 3000);
+
+        document.onreadystatechange = () => {
+            if (document.readyState === 'complete') {
+                document.querySelector('.loading').classList.add("act");
+            }
+        };
+
+    </script>
+
+</head>
+
+<body>
+    <div class="loading"><span class="loader"></span></div>
+
+
+    <!-- header -->
+    <header>
+        <div class="container-lg container-fluid p-0">
+            <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="p-0">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" target="_blank" href="https://online.carrefour.com.tw/">
+                                <img src="images/LOGO.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- TopBN -->
+    <div class="setup-range">
+        <section class="visualBox overflow-hidden- animate__animated animate__fadeIn" id="kvTopBN">
+            <div class="container-fluid p-0">
+                <div class="row justify-content-center topbgBox">
+                    <!-- pc -->
+                    <div class="d-md-block d-sm-none d-none">
+                        <div class="topicBox">
+                            <div class="animate__animated animate__fadeInDown">
+                                <img src="images/topBn_bg-main.webp" class="img-fluid "
+                                    style="user-select: none;point-event:none;" alt="">
+                                <!-- <img src="images/topBn_bg-main-test.webp" class="img-fluid " style="user-select: none;point-event:none;" alt=""> -->
+                            </div>
+
+                            <!-- 加動畫副標 start -->
+
+                            <div class="item-title position-absolute">
+                                <div class="animate__animated animate__infinite anime_upDown"
+                                    style="animation-delay: 0.7s;animation-timing-function:ease;">
+                                    <img src="images/topBn_topic.webp"
+                                        class="img-fluid animate__animated animate__zoomInUp pe-none"
+                                        style="user-select: none;" alt="8/31-9/12，口腔保健 我最罩">
+                                </div>
+                            </div>
+
+                            <div class="leaf position-absolute animate__infinite anime_upDown pe-none"
+                                style="animation-delay: -.3s;animation-duration: 3s;">
+                                <img class="img-fluid animate__animated animate__bounceIn" src="images/leaf.webp"
+                                    alt="">
+                            </div>
+
+
+                            <!-- ppp -->
+
+                            <div class="item-p1 position-absolute">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral1" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img src="images/topbn-pp1a.webp"
+                                        class="img-fluid animate__animated animate__flipInY"
+                                        alt="獅王細潔無隱角/細潔超薄小頭牙刷$105-$109/組">
+                                </a>
+                            </div>
+                            <div class="item-p2 position-absolute">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral2" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img src="images/topbn-pp2a.webp"
+                                        class="img-fluid animate__animated animate__flipInY" alt="3M">
+                                </a>
+                            </div>
+
+                            <!-- 加動畫副標 end -->
+
+                        </div>
+                    </div>
+                    <!-- mobile -->
+                    <div class="mobile d-md-none d-sm-block">
+                        <div class="topicBox">
+                            <div class="">
+                                <img src="images/topBn_brand-mb.webp" class="img-fluid pe-none" alt="">
+                            </div>
+                            <!-- 加動畫副標 start -->
+                            <div class="item-sub-m position-absolute">
+                                <div class="anime_upDown">
+                                    <img src="images/topBn_topic-mb.webp" alt="8/31-9/12，口腔保健 我最罩"
+                                        class="img-fluid animate__animated animate__zoomInUp">
+                                </div>
+                            </div>
+
+
+                            <div class="item-p1 position-absolute">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral1" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img src="images/topbn-pp1a.webp"
+                                        class="img-fluid animate__animated animate__flipInY"
+                                        alt="獅王細潔無隱角/細潔超薄小頭牙刷$105-$109/組">
+                                </a>
+                            </div>
+                            <div class="item-p2 position-absolute">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral2" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img src="images/topbn-pp2a.webp"
+                                        class="img-fluid animate__animated animate__flipInY" alt="3M">
+                                </a>
+                            </div>
+
+                            <!-- 加動畫副標 end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 品牌區 -->
+            <div class="container d-none">
+                <div class="row  align-items-md-end align-items-center">
+                    <div class="col-md-3 col-3" style="text-align: end;">
+                        <img class="img-fluid sub-brand" src="images/sub-brand.webp" alt="">
+                    </div>
+                    <div class="col-md-9 col-9 d-flex justify-content-center align-items-center flex-column">
+                        <div class="clip">
+                            <img class="img-fluid" src="images/clip.webp" alt="">
+                        </div>
+                        <div class="logoout">
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-01.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-02.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-03.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-04.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-05.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-06.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-07.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-08.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-09.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-10.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-11.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-12.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-13.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-14.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-15.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-16.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-17.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-18.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <a href="" target="_blank">
+                                    <img class="img-fluid hvr-wobble-vertical" src="images/brand-19.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <main id="main">
+        <!-- 活動區 -->
+        <div class="setup-range" id="sec01">
+            <section class="py-md-4 pt-2 pb-4">
+                <div class="container actbig-box position-relative">
+
+                    <!-- pc -->
+                    <div class="d-md-block d-none">
+                        <div class="row position-relative" style="z-index: 5;">
+                            <div class="col-md-4 p-1">
+                                <div data-aos="fade-left">
+                                    <img class="img-fluid" src="images/a1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-1">
+                                <div data-aos="fade-down">
+                                    <a href="https://online.carrefour.com.tw/zh/1210504500101.html" target="_blank"
+                                        class="hvr-wobble-vertical">
+                                        <img class="img-fluid" src="images/a2.webp" alt="李施德霖">
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 p-1">
+                                <div data-aos="fade-right">
+                                    <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral3"
+                                        target="_blank" class="hvr-wobble-vertical">
+                                        <img class="img-fluid" src="images/a3.webp" alt="Crest">
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- mb -->
+                    <div class="d-md-none d-block">
+                        <div data-aos="fade-down">
+                            <div class="row justify-content-center position-relative" style="z-index: 5;">
+                                <div class="col-md-6 col-10">
+                                    <!-- Swiper -->
+                                    <div class="swiperCover2 pb-4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide  text-center">
+                                                <img class="img-fluid" src="images/a1.webp" alt="">
+                                            </div>
+                                            <div class="swiper-slide text-center">
+                                                <a href="https://online.carrefour.com.tw/zh/1210504500101.html"
+                                                    target="_blank" class="hvr-wobble-vertical">
+                                                    <img class="img-fluid" src="images/a2.webp" alt="李施德霖">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide text-center">
+                                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral3"
+                                                    target="_blank" class="hvr-wobble-vertical">
+                                                    <img class="img-fluid" src="images/a3.webp" alt="Crest">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 優惠商品區 -->
+        <div class="setup-range">
+            <section class="specialbox">
+                <div class="container px-0 position-relative">
+                    <div class="row position-relative" style="z-index: 5;">
+                        <div class="col-md-6" id="sec02">
+                            <div class="special-inn" data-aos="fade-right">
+                                <div class="row justify-content-center">
+                                    <div class="col-8 text-center">
+                                        <img class="img-fluid" src="images/sub-buy1get1.webp" alt="第二件免費">
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral4"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/buy1get-p1.webp" alt="Ora2">
+                                        </a>
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral7"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/buy1get-p3.webp" alt="MARVIS">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral5"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/buy1get-p2.webp" alt="高露潔">
+                                        </a>
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral6"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/buy1get-p4.webp" alt="李施德霖">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-0 pt-4" id="sec03">
+                            <div class="special-inn" data-aos="fade-left">
+                                <div class="row justify-content-center">
+                                    <div class="col-8 text-center">
+                                        <img class="img-fluid" src="images/sub-bonus-10.webp" alt="紅利點數10倍送">
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral9"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/bonus10-p1.webp" alt="百齡">
+                                        </a>
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral10"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/bonus10-p3.webp" alt="白人兒童">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral8"
+                                            target="_blank" class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/bonus10-p2.webp" alt="高露潔">
+                                        </a>
+                                        <a href="https://online.carrefour.com.tw/zh/1210001000203.html" target="_blank"
+                                            class="hvr-wobble-vertical">
+                                            <img class="img-fluid" src="images/bonus10-p4.webp" alt="白人牙膏">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 口腔護理一把罩 -->
+        <div class="setup-range">
+            <section class="py-4" id="sec04">
+                <div class="container position-relative carebigbox">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-8 text-center position-relative sub-care">
+                            <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral14" target="_blank"
+                                class="hvr-wobble-vertical">
+                                <div data-aos="fade-up"><img class="img-fluid " src="images/sub-care-2.webp"
+                                        alt="口腔護理一把罩"></div>
+                            </a>
+                            <div class="position-absolute teethmagic pe-none">
+                                <img class="img-fluid" src="images/teethmagic.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-end carebigbox-row">
+                        <div class="col-md-3 col-6">
+                            <div data-aos="fade-down" data-aos-delay="0">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral11" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img class="img-fluid care-p1" src="images/care-p1.webp" alt="好來">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div data-aos="fade-down" data-aos-delay="100">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral12" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img class="img-fluid" src="images/care-p2.webp" alt="台鹽">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6" style="margin-right: -3%;">
+                            <div data-aos="fade-down" data-aos-delay="150">
+                                <a href="https://online.carrefour.com.tw/zh/1210507600101.html" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img class="img-fluid" src="images/care-p3.webp" alt="李施德霖">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div data-aos="fade-down" data-aos-delay="200">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral13" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <img class="img-fluid" src="images/care-p4.webp" alt="舒酸定">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="care-outbox-car">
+                                <div class="swiper-container2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral15">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-01.webp" alt="LG PUMPING薄荷牙膏(冰澈/花香)285克">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">LG PUMPING薄荷牙膏(冰澈/花香)285克</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="greytext average">平均一件</span><span
+                                                            class="speprice">$149</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral16">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-02.webp" alt="美國Plackers牙線棒系列">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">美國Plackers牙線棒系列</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="greytext average">全面</span><span
+                                                            class="speprice">8<span class="greytext">折起</span></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral17">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-03.webp" alt="刷樂植漱口(山雨/海霧)400毫升">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">刷樂植漱口(山雨/海霧)400毫升</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$139</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/1210505300101.html">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-04.webp" alt="牙周適牙齦專業護理漱口水雙入組500毫升x2">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">牙周適牙齦專業護理漱口水雙入組500毫升x2</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$349</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/1210218000101.html">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-05.webp" alt="舒酸定牙齦三入＋多元護理新超值組120克x4">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">舒酸定牙齦三入＋多元護理新超值組120克x4</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$359</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral18">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-06.webp" alt="日本獅王NONIO終結口氣牙膏系列130克">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">日本獅王NONIO終結口氣牙膏系列130克</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$89</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral19">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-07.webp" alt="刷樂濃密牙刷系列2支">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">刷樂濃密牙刷系列2支</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$139</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="productSetprice hvr-wobble-vertical">
+                                                <a target="_blank"
+                                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral20">
+                                                    <img loading="lazy" class="img-fluid"
+                                                        src="images/carProduct-08.webp"
+                                                        alt="高露潔抗敏感2+1超值組(牙齦護理/強護琺瑯質)120克x2+80克">
+                                                    <div class="box">
+                                                        <h4 class="ellipsis">高露潔抗敏感2+1超值組(牙齦護理/強護琺瑯質)120克x2+80克</h4>
+                                                    </div>
+                                                    <div class="priceBox freelabelbigBox">
+                                                        <span class="oriprice text-white">&nbsp;</span><span
+                                                            class="speprice">$229</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- 兒童區 -->
+        <div class="setup-range">
+            <section class="py-4">
+                <div class="container-md p-0">
+                    <div class="childbox position-relative">
+                        <div class="position-absolute child-animal01 pe-none"><img class="img-fluid"
+                                src="images/child-animal01.webp" alt=""></div>
+                        <div class="position-absolute child-animal02 pe-none" style="animation-delay: -1s;"><img
+                                class="img-fluid" src="images/child-animal02.webp" alt=""></div>
+                        <div class="position-absolute child-animal02-chat pe-none"><img class="img-fluid"
+                                src="images/child-animal02-chat.webp" alt=""></div>
+
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-8 text-center position-relative sub-care" id="sec05">
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral21" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <div data-aos="fade-up"><img class="img-fluid " src="images/sub-clild-2.webp"
+                                            alt="兒童保健不能少"></div>
+                                </a>
+                                <div class="position-absolute teethmagic">
+                                    <img class="img-fluid" src="images/teethboy.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 col-6 d-flex align-items-end flex-column flex-md-row">
+
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral22" target="_blank"
+                                    class="hvr-wobble-vertical">
+                                    <div data-aos="fade-down" data-aos-delay="0"><img class="img-fluid"
+                                            src="images/child-p1.webp" alt="高露潔"></div>
+                                </a>
+
+                                <a href="https://online.carrefour.com.tw/zh/1210590800101.html" target="_blank"
+                                    class="hvr-wobble-vertical child-p4-a">
+                                    <div data-aos="fade-down" data-aos-delay="100"><img class="img-fluid"
+                                            src="images/child-p2.webp" alt="李施德霖"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-5 col-6 d-flex align-items-md-end flex-column flex-md-row">
+                                <a href="https://online.carrefour.com.tw/zh/1210100300101.html" target="_blank"
+                                    class="hvr-wobble-vertical order-md-1 order-2">
+                                    <div data-aos="fade-down" data-aos-delay="150"><img class="img-fluid"
+                                            src="images/child-p3.webp" alt="德恩奈"></div>
+                                </a>
+                                <a href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral23" target="_blank"
+                                    class="hvr-wobble-vertical child-p4-a order-md-2 order-1">
+                                    <div data-aos="fade-down" data-aos-delay="200"><img class="img-fluid child-p4"
+                                            src="images/child-p4.webp" alt="刷樂"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+
+
+    <!-- 按鈕 -->
+    <section class="py-2">
+        <!-- button -->
+        <div class="container">
+            <div data-aos="fade-down">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-6 p-md-2 p-1">
+                        <div class="btnset">
+                            <a target="_blank" class="hvr-buzz align-items-center"
+                                href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral24">看更多<br>商品</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 p-md-2 p-1">
+                        <div class="btnset">
+                            <a target="_blank" class="hvr-buzz align-items-center"
+                                href="https://events.carrefour.com.tw/brand_overview/index.html">看更多<br>品牌</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 活動辦法-->
+    <section class="methodBoxAll overflow-hidden pb-4" id="method">
+        <div data-aos="fade-in">
+            <div class="methodBox">
+                <div class="container">
+                    <div class="wayoutbox">
+                        <h3 class="method-title">活動辦法</h3>
+                        <ol class="mb-0">
+                            <li>活動期間內，購買<a target="_blank"
+                                    href="https://online.carrefour.com.tw/zh/search?cgid=Y23DM28Oral24">【看更多商品】</a>專區內指定牙膏/牙刷(不含電動牙刷)/漱口水/牙線(棒)/牙間刷指定商品，單筆消費折扣後滿$349元
+                                <ul class="pl-3">
+                                    <li>第一重: 贈紅利點數9,000點(等同$30)。(單筆最高贈18,000點)</li>
+                                    <li>第二重:
+                                        贈刷樂植漱口體驗包一組。(12毫升x2，價值$29元)(單筆僅限贈一組，全台限量10,000組，數量有限送完為止，若購物車未顯示贈品品項，即代表該出貨店贈品已贈完，恕不補贈)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>活動期間內，一般訂單不限金額即可以$69元加價購刷樂植漱口隨身包一包。(山雨/海霧，12毫升x10入，價值$99元)(單筆僅限各加購1包，全台限量12,000包，若購物車未顯示加價購品項，即代表該出貨店商品已售完)
+                            </li>
+                            <li>活動期間內，購買李施德霖漱口水/3M牙線(棒)指定商品，單筆消費折扣後滿$499元登錄發票送$50元家樂福即享券，單筆最高送$100元。活動詳情請見<a
+                                    target="_blank" href="">活動網址。</a></li>
+                            <li>本活動所回饋的紅利點數，將於活動結束後，確認訂單未辦理取消或退貨後，將於商品送達後約3個工作天，將紅利點數發放至您的帳戶內
+                                (如遇假日、系統遞延等情況，恐延遲發放點數，敬請見諒。)；紅利點數發送後將不另行通知，請直接利用家樂福 Carrefour TW APP 或上網<a
+                                    target="_blank"
+                                    href="https://online.carrefour.com.tw/zh/member/login/">【台灣家樂福官網/會員中心】</a> 頁面查詢。
+                            </li>
+                            <li>若訂單辦理取消、或退貨後訂單金額未達活動門檻，恕不贈送點數；若於發放點數後退貨，則將扣回贈送點數。</li>
+                            <li>如持有的好康卡卡號起始為 7391~7395 者，卡別屬於企業卡或團體卡，不適用本活動。</li>
+                            <li>商品折扣或消費滿額贈品等優惠，以交易當時之網站公告為準。</li>
+                            <li>大宗採購與重覆下單相同商品者將不適用本活動。(不論單一帳號或多帳號分別下單者)</li>
+                            <li>家樂福線上購物平台有權決定取消、終止、修改或暫停活動，亦有權對本活動事項做出最終解釋。修改訊息將於網站公佈，不另行通知。</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="gotop" class="d-lg-none d-xl-none d-md-none">
+        <a href="#" class="top">
+            <div class="arrowUp"></div>
+        </a>
+    </div>
+
+    <!-- 側邊導覽列 start -->
+    <section class="d-lg-block d-xl-block d-md-block d-sm-none d-none p-0">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#method">活動辦法</a>
+            <a href="#sec01">精選活動</a>
+            <a href="#sec02">第二件免費</a>
+            <a href="#sec03">點數10倍送</a>
+            <a href="#sec04">口腔護理一把罩</a>
+            <a href="#sec05">兒童保健不能少</a>
+            <a href="#kvTopBN">Top</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">快<br>速<br>導<br>覽</button>
+    </section>
+    <!-- 側邊導覽列 end -->
+
+    <!-- 手機選單 -->
+    <div class="dropdown d-lg-none d-xl-none d-md-none">
+        <button onclick="myFunction()" class="dropbtn">
+            <div class="hamline">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#method">活動辦法</a>
+            <a href="#sec01">精選活動</a>
+            <a href="#sec02">第二件免費</a>
+            <a href="#sec03">點數10倍送</a>
+            <a href="#sec04">口腔護理一把罩</a>
+            <a href="#sec05">兒童保健不能少</a>
+            <a href="#kvTopBN">Top</a>
+        </div>
+    </div>
+    <!-- 手機選單 end -->
+
+    <!-- 底部選單 -->
+    <!-- <div class="bottom_menu">
+            <div class="bottom_menu_box">
+                <div class="bottom_menu_inner">
+                    <a href="#sec00">舒潔</a>
+                    <a href="#sec01">五月花</a>
+                    <a href="#sec02">春風</a>
+                    <a href="#sec03">品牌大集合</a>
+                    <a href="#kvTopBN">Top</a>
+                </div>
+            </div>
+        </div> -->
+    <!-- footer -->
+    <footer class="pb-3">
+        <p>家樂福線上購物平台有權決定取消、終止、
+            <span>修改或暫停活動，亦有權對本活動事項做出最終解釋</span>
+        </p>
+    </footer>
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KJXWWG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- jquery -->
+    <!-- bootstrap.min -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/style.js"></script>
+
+
+</body>
+
+</html>
